@@ -15,6 +15,9 @@ services:
   redis:
     image: evilways/redisdb:test
     ports:
-      - "6379:6379"    
+      - "6379:6379"
+    deploy:
+      placement:
+        constraints: [node.role == manager]    
 networks:
   webnet:	
