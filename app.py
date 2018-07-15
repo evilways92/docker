@@ -18,7 +18,7 @@ def hello():
     html = "<h3>Hello {name}!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
            "<b>Visits:</b> {visits}<br/>" \
-	   "<b>Server Redis:</b> {host}"
+	   "<b>Server Redis:</b> {host}" 
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits, host=host)
 
 if __name__ == "__main__":
