@@ -1,7 +1,7 @@
 version: "3"
 services:
   web:
-    image: evilways/get-started:part4
+    image: evilways/get-started:latest
     deploy:
       replicas: 5
       resources:
